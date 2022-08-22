@@ -1,0 +1,87 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #131313;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.swiper-pagination {
+    top: 80px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #525252;
+    height: 17px;
+    width: 7px;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #E7B75A;
+    height: 28px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* BLOCK 1 */
+.slideNumber {
+    width: 30%;
+    margin: 30px 50px 30px auto;
+}
+
+.description {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+#car {
+    display: flex;
+    margin-left: auto;
+}
+
+.signUp {
+    background: #fff;
+    border-radius: 8px;
+    color: #131313;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    margin: auto;
+    padding: 13px 0;
+    width: 70%;
+}
