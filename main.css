@@ -3,23 +3,33 @@ body {
     position: relative;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
     background: #131313;
     font-size: 14px;
     color: #fff;
     margin: 0;
     padding: 0;
 }
+iframe {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+hr {
+    border: 1px solid #282828;
+    animation: hrAnimation 1s;
+}
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 h1 {
     font-weight: 500;
     font-size: 26px;
+}
+
+h3 {
+    margin: 0 0 10px 0;
 }
 
 p {
@@ -58,7 +68,6 @@ p {
 
 /* BLOCK 1 */
 .slideNumber {
-    width: 30%;
     margin: 30px 50px 30px auto;
 }
 
@@ -71,10 +80,19 @@ p {
 #car {
     display: flex;
     margin-left: auto;
+    transform: translateX(60%);
+    transition: 1s;
 }
 
-.signUp {
-    background: #fff;
+.phoneIcon {
+    margin-left: 10px;
+    width: 19px;
+    height: 19px;
+}
+
+.button {
+    align-items: center;
+    background: #fbce5b;
     border-radius: 8px;
     color: #131313;
     display: flex;
@@ -82,6 +100,174 @@ p {
     font-weight: 600;
     justify-content: center;
     margin: auto;
-    padding: 13px 0;
+    padding: 13px 20px;
     width: 70%;
 }
+
+/* BLOCK 2 */
+.servicesTitle {
+    text-align: center;
+    width: 350px;
+    margin: auto;
+}
+
+.grayWrapper {
+    background-color: #e7e7e7;
+    border-radius: 40px 40px 0 0;
+    padding: 20px 20px 40px 20px;
+}
+.servicesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.serviceItem {
+    border-radius: 15px;
+    width: 40%;
+    background: #131313;
+    padding: 10px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.serviceItemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.serviceIconWrapper {
+    width: 40px;
+    padding: 15px;
+    background: #2C2C2C;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.servicePrice {
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.serviceName {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.yellowColor {
+    color: #E7B75A;
+}
+  
+/* Block 3 */
+.contactWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.contactField {
+    padding: 20px 10px;
+    background: #131313;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagramIcon {
+    margin-right: 10px;
+}
+.scheduleWrapper{
+    text-align: center;
+    background: #fff;
+    color: #131313;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.schedule {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.scheduleItem {
+    width: 170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 46px;
+    width: 46px;
+  }
+  
+  .menu-icon {
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 1px;
+  }
+  
+  /* ------------- */
+  .menu-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100vh;
+    left: 40vw;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+  }
+  
+  /* ------------- */
+  .menu-overlay {
+    background-color: #fff;
+    color: #333;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 0.3s;
+
+  }
+  .menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .overlay-info {
+    text-align: center;
+    color: #111825;
+  }
+  
+  @keyframes hrAnimation {
+    from {
+      width: 0%;
+    }
+  
+    to {
+        width: 100%;
+    }
+  }
