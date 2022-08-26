@@ -78,7 +78,7 @@ p {
     text-align: center;
     width: 300px;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #car {
@@ -300,13 +300,16 @@ p {
     p {
         font-size: 15px;
     }
-
+    .swiper-pagination {
+        top: 63px !important;
+    }
     #car {
         height: 36%;
     }
 
     .slideNumber {
         height: 8%;
+        margin: 20px 50px 20px auto;
     }
 
     .button {
