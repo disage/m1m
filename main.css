@@ -78,6 +78,7 @@ p {
     text-align: center;
     width: 300px;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 #car {
@@ -113,6 +114,7 @@ p {
     text-align: center;
     width: 350px;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .grayWrapper {
@@ -282,10 +284,11 @@ p {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 380px) {
     iframe {
-        height:130px;
+        height: 130px;
     }
+
     h1 {
         font-size: 23px;
     }
@@ -297,9 +300,11 @@ p {
     p {
         font-size: 15px;
     }
+
     #car {
-        height: 35%;
+        height: 36%;
     }
+
     .slideNumber {
         height: 8%;
     }
@@ -308,7 +313,7 @@ p {
         font-size: 16px;
         padding: 11px 10px;
         width: 70%;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
     .serviceItem:nth-child(3) {
@@ -318,11 +323,18 @@ p {
     .serviceItem:nth-child(4) {
         display: none;
     }
+
     .contactField {
-        padding: 16px 10px;
+        padding: 12px 10px;
         font-size: 14px;
     }
+
     .scheduleItem {
         font-size: 15px;
+    }
+    .grayWrapper {
+        background-color: #e7e7e7;
+        border-radius: 40px 40px 0 0;
+        padding: 15px 20px 100px 20px;
     }
 }
