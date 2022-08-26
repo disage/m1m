@@ -281,3 +281,48 @@ p {
         width: 100%;
     }
 }
+
+@media (max-width: 390px) {
+    iframe {
+        height:130px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+    #car {
+        height: 35%;
+    }
+    .slideNumber {
+        height: 8%;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 11px 10px;
+        width: 70%;
+        margin-bottom: 70px;
+    }
+
+    .serviceItem:nth-child(3) {
+        display: none;
+    }
+
+    .serviceItem:nth-child(4) {
+        display: none;
+    }
+    .contactField {
+        padding: 16px 10px;
+        font-size: 14px;
+    }
+    .scheduleItem {
+        font-size: 15px;
+    }
+}
