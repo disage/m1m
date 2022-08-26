@@ -9,10 +9,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 iframe {
     border-radius: 15px;
     margin-bottom: 20px;
 }
+
 hr {
     border: 1px solid #282828;
     animation: hrAnimation 1s;
@@ -38,7 +40,7 @@ p {
 }
 
 .swiper-pagination {
-    top: 80px !important;
+    top: 73px !important;
 }
 
 .swiper-pagination-bullet {
@@ -63,12 +65,13 @@ p {
     background: #131313;
     display: flex;
     flex-direction: column;
-
 }
 
 /* BLOCK 1 */
+
 .slideNumber {
     margin: 30px 50px 30px auto;
+    height: 10%;
 }
 
 .description {
@@ -105,6 +108,7 @@ p {
 }
 
 /* BLOCK 2 */
+
 .servicesTitle {
     text-align: center;
     width: 350px;
@@ -114,13 +118,15 @@ p {
 .grayWrapper {
     background-color: #e7e7e7;
     border-radius: 40px 40px 0 0;
-    padding: 20px 20px 80px 20px;
+    padding: 20px 20px 100px 20px;
 }
+
 .servicesList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .serviceItem {
     border-radius: 15px;
     width: 40%;
@@ -134,7 +140,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .serviceIconWrapper {
@@ -161,12 +167,13 @@ p {
 .yellowColor {
     color: #E7B75A;
 }
-  
+
 /* Block 3 */
 .contactWrapper {
     display: flex;
     justify-content: space-between;
 }
+
 .contactField {
     padding: 20px 10px;
     background: #131313;
@@ -178,10 +185,12 @@ p {
     align-items: center;
     justify-content: center;
 }
+
 .instagramIcon {
     margin-right: 10px;
 }
-.scheduleWrapper{
+
+.scheduleWrapper {
     text-align: center;
     background: #fff;
     color: #131313;
@@ -190,26 +199,28 @@ p {
     margin: 10px 0;
     font-size: 16px;
 }
+
 .schedule {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
+
 .scheduleItem {
     width: 170px;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
+
 .menu {
     position: absolute;
     top: 20px;
     left: 20px;
     height: 46px;
     width: 46px;
-  }
-  
-  .menu-icon {
+}
+
+.menu-icon {
     position: absolute;
     width: 20px;
     height: 14px;
@@ -218,10 +229,9 @@ p {
     top: 0;
     right: 0;
     bottom: 1px;
-  }
-  
-  /* ------------- */
-  .menu-circle {
+}
+
+.menu-circle {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -231,10 +241,9 @@ p {
     transform: scale(1);
     z-index: 1000;
     transition: 0.5s ease-in-out;
-  }
-  
-  /* ------------- */
-  .menu-overlay {
+}
+
+.menu-overlay {
     background-color: #fff;
     color: #333;
     height: 100%;
@@ -251,23 +260,24 @@ p {
     align-items: center;
     transition-delay: 0.3s;
 
-  }
-  .menu-overlay.open {
+}
+
+.menu-overlay.open {
     opacity: 1;
     visibility: visible;
-  }
-  
-  .overlay-info {
+}
+
+.overlay-info {
     text-align: center;
     color: #111825;
-  }
-  
-  @keyframes hrAnimation {
+}
+
+@keyframes hrAnimation {
     from {
-      width: 0%;
+        width: 0%;
     }
-  
+
     to {
         width: 100%;
     }
-  }
+}
