@@ -225,6 +225,8 @@ p {
 }
 .servicesFullList {
     padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .serviceCard {
     background: #131313;
@@ -294,6 +296,7 @@ p {
 }
 
 .menu-overlay {
+    width: 100%;
     overflow: scroll;
     margin: auto;
     background-color: #D9D9D9;
@@ -318,6 +321,7 @@ p {
 }
 #close {
     margin-right: 20px;
+    margin-left: 20px;
 }
 @keyframes hrAnimation {
     from {
@@ -387,6 +391,6 @@ p {
     .grayWrapper {
         background-color: #e7e7e7;
         border-radius: 40px 40px 0 0;
-        padding: 15px 20px 100px 20px;
+        padding: 15px 20px 120px 20px;
     }
 }
