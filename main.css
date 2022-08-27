@@ -130,7 +130,7 @@ p {
 .grayWrapper {
     background-color: #e7e7e7;
     border-radius: 40px 40px 0 0;
-    padding: 20px 20px 120px 20px;
+    padding: 20px 20px 150px 20px;
 }
 
 .servicesList {
@@ -224,9 +224,7 @@ p {
     justify-content: space-between;
 }
 .servicesFullList {
-    padding-bottom: 60px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0 20px 20px 20px;
 }
 .serviceCard {
     background: #131313;
