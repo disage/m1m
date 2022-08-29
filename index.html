@@ -16,7 +16,7 @@
 
 <body>
     <!-- Mobile -->
-    <div class="swiper mySwiper">
+    <div id="mobile" class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="images/01.png" class="slideNumber" />
@@ -208,7 +208,8 @@
                             </div>
                             <div class="row">
                                 <span class="serviceCardName">Заміна паливного фільтру</span>
-                                <span class="serviceCardDescription">Заміна підвісного / бензиновоного / дизельного паливного фільтру</span>
+                                <span class="serviceCardDescription">Заміна підвісного / бензиновоного / дизельного
+                                    паливного фільтру</span>
                             </div>
                         </div>
                         <span class="servicePrice serviceCardPrice">250<span class="yellowColor">₴</span></span>
@@ -319,12 +320,35 @@
             </div>
         </div>
     </div>
+    <div id="desktop">
+        <div class="section">
+            <img src="images/01.png" class="slideNumber" />
+            <div class="description">
+                <h1>Вітаємо в <b>M1M</b> сервісі</h1>
+                <hr>
+                <p>Ми надійний і авторитетний сервіс обслуговування авто</p>
+            </div>
+            <img id="car" src="images/car.png" alt="car" />
+            <a href="tel:0639665853" class="button">Записатися <img src="images/phone.png" class="phoneIcon"
+                    alt="phone" /></a>
+        </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
         onload = function () {
-            document.getElementById("car").style.transform = "translateX(0px)";
+            let viewportWidth = window.innerWidth;
+            if (viewportWidth < 1000) {
+                document.getElementById("mobile").style.display = "flex";
+                document.getElementById("mobile").style.visibility = "visible";
+                document.getElementById("mobile").style.opacity = "1";
+            } else {
+                document.getElementById("desktop").style.display = "flex";
+                document.getElementById("desktop").style.visibility = "visible";
+                document.getElementById("desktop").style.opacity = "1";
+            }
+            // document.getElementById("car").style.transform = "translateX(20%)";
             function openModal() {
                 document.getElementsByClassName("menu-circle")[0].style.transform = "scale(30)";
                 document.getElementsByClassName("menu-circle")[0].style.background = "#D9D9D9";
