@@ -55,6 +55,10 @@ p {
     flex-direction: column;
 }
 
+.marginTopAuto {
+    margin-top: auto !important;
+}
+
 #mobile {
     display: none;
     visibility: hidden;
@@ -288,6 +292,7 @@ p {
     top: 0px;
     left: 0px;
     width: 100vw;
+    z-index: -3;
     height: 100vh;
 }
 
@@ -341,6 +346,7 @@ p {
 }
 
 #close {
+    cursor: pointer;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -361,7 +367,7 @@ p {
 .section {
     width: 100%;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 40px;
     display: flex;
     flex-direction: column;
@@ -376,12 +382,27 @@ p {
 .imageWrapper {
     margin-top: auto;
     width: 100%;
-    height: 50%;
+    height: 50vh;
     background-image: url('images/oilChangePhoto.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px 15px 0px 0px;
 }
+
+.contactsDescription {
+    margin-bottom: 0;
+}
+
+.contactsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.contactsInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
 
 @keyframes hrAnimation {
     from {
@@ -509,13 +530,14 @@ p {
     }
 
     .description {
+        padding-bottom: 0;
         margin: 0;
         text-align: left;
         width: 530px;
     }
 
     .button {
-        margin: 0;
+        margin: 10px 0 0 0;
         width: 30%;
     }
 
@@ -576,5 +598,17 @@ p {
 
     .servicePrice {
         font-size: 20px;
+    }
+
+    .scheduleWrapper {
+        padding: 20px;
+        width: 100%;
+        border-radius: 15px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .contactField {
+        width: 100%;
+        margin-top: 30px;
     }
 }
