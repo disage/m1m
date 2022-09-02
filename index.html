@@ -145,7 +145,7 @@
                         </div>
                         <span class="servicePrice serviceCardPrice">250<span class="yellowColor">₴</span></span>
                     </div>
-                    <div class="serviceItem">
+                    <div class="serviceItem serviceItemDesktop">
                         <div class="serviceItemHeader">
                             <div class="serviceIconWrapper">
                                 <img src="images/carOil.png" alt="carOil">
@@ -154,7 +154,7 @@
                         </div>
                         <span class="serviceName">Заміна моторного масла і фільтра</span>
                     </div>
-                    <div class="serviceItem">
+                    <div class="serviceItem serviceItemDesktop">
                         <div class="serviceItemHeader">
                             <div class="serviceIconWrapper">
                                 <img src="images/carOil.png" alt="carOil">
@@ -163,7 +163,7 @@
                         </div>
                         <span class="serviceName">Заміна моторного масла і фільтра</span>
                     </div>
-                    <div class="serviceItem">
+                    <div class="serviceItem serviceItemDesktop">
                         <div class="serviceItemHeader">
                             <div class="serviceIconWrapper">
                                 <img src="images/carOil.png" alt="carOil">
@@ -172,7 +172,7 @@
                         </div>
                         <span class="serviceName">Заміна моторного масла і фільтра</span>
                     </div>
-                    <div class="serviceItem">
+                    <div class="serviceItem serviceItemDesktop">
                         <div class="serviceItemHeader">
                             <div class="serviceIconWrapper">
                                 <img src="images/carOil.png" alt="carOil">
@@ -181,7 +181,7 @@
                         </div>
                         <span class="serviceName">Заміна моторного масла і фільтра</span>
                     </div>
-                    <div class="serviceItem">
+                    <div class="serviceItem serviceItemDesktop">
                         <div class="serviceItemHeader">
                             <div class="serviceIconWrapper">
                                 <img src="images/carOil.png" alt="carOil">
@@ -202,7 +202,7 @@
                         </div>
                         <span class="servicePrice serviceCardPrice">250<span class="yellowColor">₴</span></span>
                     </div>
-                    <div class="serviceItem">
+                    <div class="serviceItem serviceItemDesktop">
                         <div class="serviceItemHeader">
                             <div class="serviceIconWrapper">
                                 <img src="images/carOil.png" alt="carOil">
@@ -464,17 +464,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-        onload = function () {
+        function toogleVersion () {
             let viewportWidth = window.innerWidth;
             if (viewportWidth < 1000) {
+                document.getElementById("desktop").style.display = "none";
+                document.getElementById("desktop").style.visibility = "hidden";
+                document.getElementById("desktop").style.opacity = "0";
                 document.getElementById("mobile").style.display = "flex";
                 document.getElementById("mobile").style.visibility = "visible";
                 document.getElementById("mobile").style.opacity = "1";
             } else {
+                document.getElementById("mobile").style.display = "none";
+                document.getElementById("mobile").style.visibility = "hidden";
+                document.getElementById("mobile").style.opacity = "0";
                 document.getElementById("desktop").style.display = "flex";
                 document.getElementById("desktop").style.visibility = "visible";
                 document.getElementById("desktop").style.opacity = "1";
             }
+        } 
+        onload = function () {
+            toogleVersion()
             function openModal() {
                 document.getElementsByClassName("menu")[0].style.zIndex = "1000";
                 document.getElementsByClassName("menu-circle")[0].style.transform = "scale(30)";
@@ -493,6 +502,8 @@
             document.getElementById("menu-link-pc").addEventListener("click", openModal);
             document.getElementById("close").addEventListener("click", closeModal);
         };
+        window.addEventListener('resize', toogleVersion , true);
+
         let swiper = new Swiper(".mySwiper", {
             direction: "vertical",
             mousewheel: true,
