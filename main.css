@@ -49,7 +49,10 @@ p {
     font-weight: 300;
     font-size: 18px;
 }
-
+.smallText {
+    font-size: 14px;
+    font-weight: 300;
+}
 .row {
     display: flex;
     flex-direction: column;
@@ -389,6 +392,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px 15px 0px 0px;
+    display: flex;
 }
 
 .contactsDescription {
@@ -406,7 +410,26 @@ p {
     width: 40%;
 }
 
+.circle {
+    transform: scale(1.3);
+    margin-left: 24%;
+    margin-top: 9%;
+    margin-right: 100px;
+    animation: fade 1.3s;
+}
 
+.opacityButton {
+    animation: fade 1.3s;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    background : rgba(19, 19, 19, 0.5);
+    font-weight: 500;
+    font-size: 20px;
+    height: fit-content;
+    margin-top: 10%;
+    text-align: center;
+}
 @keyframes hrAnimation {
     from {
         width: 0%;
@@ -414,6 +437,15 @@ p {
 
     to {
         width: 100%;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
     }
 }
 
@@ -520,11 +552,6 @@ p {
 }
 
 @media (max-width: 1440px) {
-    .serviceItem {
-        margin-left: 10px;
-    }
-
-
     .serviceItemLarge {
         margin-left: 10px;
     }
@@ -553,7 +580,6 @@ p {
     p {
         font-size: 26px;
     }
-
     .descriptionWrapper {
         display: flex;
         flex-direction: column;
